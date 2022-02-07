@@ -3,22 +3,34 @@
 ## Aí que fome
  
 O site "Aí que fome" tem o intuito de ter uma coleção de receitas, com descrição das mesmas
-valor dos ingredientes, e o tempo médio de preparo
+valor dos ingredientes, e o tempo médio de preparo.
+Surgiu durante uma proposta de desafio proposta pela Compasso, para consolidar conhecimento.
+
+## Proposta
+
+* Necessária a criação de um arquivo readme para adicionar toda documentação sobre o desenvolvimento;
+* No mínimo 3 rotas diferentes (home (main, header, footer), formulário e página extra);
+* No mínimo 3 páginas HTML;
+* Utilizar Bootstrap (opcional);
+* PadrãoBEM de CSS;
+* Ao menos uma validação utilizando Regex;
+* Utilizar DOM; 
  
  
 ## Tecnnologia 
  
 Tecnologias Usadas
  
-* Express version 4.17.2
+* Express 4.17.2
 * multer 1.4.4
 * mongoose 6.1.7
+* Bootstrap 5.0.2
+* FontAwesome 4.7.0
+* Javascript
 
 ## Services Used
  
 * Github
- 
- 
  
 ## Para rodar o projeto
  
@@ -28,9 +40,11 @@ Tecnologias Usadas
 >    criar o .env de acordo com .env.example
 * Para rodar o projeto:
 >    npm run dev
- 
- 
 
+* No front só necessário instalar a extensão live server e rodar no ícone que aparace na borda inferior no vs code
+ 
+ ## WireFrame
+ https://www.figma.com/file/qfccfeKaR3U5X8D2pIczAN/Wireframe
  
 ## Features
 
