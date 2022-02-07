@@ -1,0 +1,44 @@
+main {
+    position: relative;
+    min-height: 100vh;
+}
+main section .list {
+    padding-bottom: 3rem;
+}
+main section .list .list__cards {
+    margin-top: 5px;
+}
+main section .list__title {
+    background-color: rgb(220, 222, 226);
+    padding: 1rem
+}
+
+main section .list .list__cards {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+main section .list .list__cards .card {
+    border: none !important;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+main section .list .list__cards .card:hover {
+	transform: scale(1.05);
+}
+
+main section .list .list__cards .card .card-body .card-title {
+    text-align: center;
+}
+
+main section .list .list__cards .card .card-body .card-text  {
+    text-align: center;
+}
+main section .list .list__cards .card .card-img-top  {
+   min-height: 350px;
+}

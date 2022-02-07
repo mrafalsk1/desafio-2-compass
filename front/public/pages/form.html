@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aí que fome - Formulário</title>
+    <link href="../css/app.css" rel="stylesheet" type="text/css" />
+    <link href="../css/header.css" rel="stylesheet" type="text/css" />
+    <link href="../css/form.css" rel="stylesheet" type="text/css" />
+    <link href="../css/footer.css" rel="stylesheet" type="text/css" />,
+    <link href="../css/inputs.css" rel="stylesheet" type="text/css" />
+    <link href="../css/toast.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../../assets/logo.png" width="100%" height="60px">
+                </a>
+            </div>
+            <div class="navbar__item">
+                <a class="navbar__item--link" href="listagem.html">
+                    Listagem
+                </a>
+            </div>
+            <div class="navbar__item">
+                <a class="navbar__item--link" href="form.html">
+                    Formulário
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="wrap-form-receitas">
+            <h2 class="form__title">
+                Envie sua Receita!
+            </h2>
+            <div class="form">
+                <form id='form' onsubmit="receitaController.adiciona(event)">
+                    <div>
+                        <label for="nome">Nome da Receita</label>
+                        <input type="text" id='nome' class="form-control" placeholder="Filé mignon ao forno"
+                            data-tipo="nome" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div>
+                        <label for="descricao">Uma breve descrição da receita</label>
+                        <input type="text" id='descricao' class="form-control"
+                            placeholder="Nada melhor para um almoço de domingo do que o bom e velho filé mignon. Esse é bem simples de ser feito"
+                            data-tipo="descricao" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div>
+                        <label for="valor">Valor estimado dos ingredientes</label>
+                        <input type="text" id='valor' class="form-control" data-tipo="valor" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div>
+                        <label for="tempo">Tempo estimado de preparo em minutos</label>
+                        <input type="number" id='tempo' class="form-control" data-tipo="tempo" placeholder="40"
+                            required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div>
+                        <label for="imagem">Imagem de demonstração da receita</label>
+                        <input type="file" id='imagem' class="form-control" data-tipo="imagem" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="form__button">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div  class="toast align-items-center text-white border-0 me-4" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="text-center p-3">
+            © Aí que fome. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+<script src="../js/controllers/ReceitaController.js"></script>
+<script src="../js/views/View.js"></script>
+<script src="../js/views/ReceitasView.js"></script>
+<script src="../js/form.js" type="module"></script>
+
+<script>
+    let receitaController = new ReceitaController()
+</script>
+
+</html>

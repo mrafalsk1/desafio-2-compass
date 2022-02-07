@@ -1,0 +1,9 @@
+.toast {
+    float: right;
+}
+.toast--success {
+    background-color: #4BB543!important;
+}
+.toast--error {
+    background-color: #FF9494!important;
+}

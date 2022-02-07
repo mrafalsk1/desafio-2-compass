@@ -1,0 +1,35 @@
+html body {
+    background-color: rgb(220, 222, 226);
+}
+
+h2 {
+    background-color: rgb(220, 222, 226);
+    text-align: center;
+}
+
+main .form {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+main .form form {
+    padding: 0px 10px 0px 10px;
+    width: 480px;
+}
+
+main .form label {
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+main .form form .form__button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+main .form form .form__button .btn-primary {
+    background-color: #373F41;
+}
