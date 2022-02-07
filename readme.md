@@ -29,15 +29,24 @@ Here are the technologies used in this project.
 * To run the project:
 >    npm run dev
  
-## How to use
  
-Cadastro de receitas
 
  
 ## Features
- 
-  - Here will be the features.
- 
+
+Home( listagem de receitas fica ordenanda pela mais clicadas)
+![image](https://user-images.githubusercontent.com/55326761/152721049-a22dc98e-610c-46b4-849f-fe5676788d2f.png)
+
+Cadastro de receitas
+![image](https://user-images.githubusercontent.com/55326761/152720822-c8ac43fc-436c-4c06-b4bb-a409a3a8d067.png)
+
+Listagem de receitas
+![image](https://user-images.githubusercontent.com/55326761/152720953-2054983b-1de9-4677-b009-b02d22e52f85.png)
+
+Modal Receita
+
+![image](https://user-images.githubusercontent.com/55326761/152720984-7c6879e9-a437-4e7b-9016-f8d7d104a00b.png)
+
  
 ## Versioning
  
