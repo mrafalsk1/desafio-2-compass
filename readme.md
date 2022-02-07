@@ -3,7 +3,18 @@
 ## Aí que fome
  
 O site "Aí que fome" tem o intuito de ter uma coleção de receitas, com descrição das mesmas
-valor dos ingredientes, e o tempo médio de preparo
+valor dos ingredientes, e o tempo médio de preparo.
+Surgiu durante uma proposta de desafio proposta pela Compasso, para consolidar conhecimento.
+
+## Proposta
+
+* Necessária a criação de um arquivo readme para adicionar toda documentação sobre o desenvolvimento;
+* No mínimo 3 rotas diferentes (home (main, header, footer), formulário e página extra);
+* No mínimo 3 páginas HTML;
+* Utilizar Bootstrap (opcional);
+* PadrãoBEM de CSS;
+* Ao menos uma validação utilizando Regex;
+* Utilizar DOM; 
  
  
 ## Tecnnologia 
