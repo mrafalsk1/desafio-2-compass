@@ -31,8 +31,8 @@ Tecnologias Usadas
 * Para rodar o projeto:
 >    npm run dev
  
- 
-
+ ## WireFrame
+ https://www.figma.com/file/qfccfeKaR3U5X8D2pIczAN/Wireframe
  
 ## Features
 
