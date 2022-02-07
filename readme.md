@@ -34,7 +34,7 @@ Tecnologias Usadas
  
 ## Features
 
-# Home( listagem de receitas fica ordenanda pela mais clicadas)
+### Home( listagem de receitas fica ordenanda pela mais clicadas)
 
 ![image](https://user-images.githubusercontent.com/55326761/152721049-a22dc98e-610c-46b4-849f-fe5676788d2f.png)
 
