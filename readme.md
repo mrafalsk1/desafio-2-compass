@@ -21,17 +21,16 @@ Surgiu durante uma proposta de desafio proposta pela Compasso, para consolidar c
  
 Tecnologias Usadas
  
-* Express version 4.17.2
+* Express 4.17.2
 * multer 1.4.4
 * mongoose 6.1.7
 * Bootstrap 5.0.2
 * FontAwesome 4.7.0
+* Javascript
 
 ## Services Used
  
 * Github
- 
- 
  
 ## Para rodar o projeto
  
@@ -41,6 +40,8 @@ Tecnologias Usadas
 >    criar o .env de acordo com .env.example
 * Para rodar o projeto:
 >    npm run dev
+
+* No front só necessário instalar a extensão live server e rodar no ícone que aparace na borda inferior no vs code
  
  ## WireFrame
  https://www.figma.com/file/qfccfeKaR3U5X8D2pIczAN/Wireframe
