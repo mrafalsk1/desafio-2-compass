@@ -23,7 +23,7 @@ class ReceitaController {
         const response = await fetch('http://localhost:3000/recipes', {
             method: 'POST',
             body: formData,
-        })
+        }).catch(err => this.handleError(err))
         if (response.err) {
             this.elementToast.classList.add('toast--error')
             this.toastBody.textContent = 'Ops, algo deu errado'
@@ -35,18 +35,24 @@ class ReceitaController {
         this.toast.show()
 
     }
+    handleError(err) {
+        console.log(err);
+        this.elementToast.classList.add('toast--error')
+        this.toastBody.textContent = 'Servidor offline!'
+        this.toast.show()
+    }
     async listReceitas() {
         const receitasDiv = document.querySelector('#receitas-view')
         let response = ''
         if (receitasDiv.getAttribute('data-bs-most-seen')) {
-            response = await fetch(`http://localhost:3000/recipes?mostClicked=true`).then(res => res.json())
+            response = await fetch(`http://localhost:3000/recipes?mostClicked=true`).then(res => res.json()).catch(err => this.handleError(err))
         } else {
-            response = await fetch(`http://localhost:3000/recipes`).then(res => res.json())
+            response = await fetch(`http://localhost:3000/recipes`).then(res => res.json()).catch(err => this.handleError(err))
         }
-       
+
         const result = []
         for await (const receita of response) {
-            const data = await fetch(`http://localhost:3000/recipes/image/${receita.imagem.filename}`).then(res => res.blob())
+            const data = await fetch(`http://localhost:3000/recipes/image/${receita.imagem.filename}`).then(res => res.blob()).catch(err => this.handleError(err))
             result.push({
                 receita,
                 urlImage: URL.createObjectURL(data)
@@ -60,11 +66,11 @@ class ReceitaController {
     async eventOpenModal() {
         this.modal.addEventListener('show.bs.modal', async function (event) {
             var recipeid = event.relatedTarget.getAttribute('data-bs-recipeId')
-            const receita = await fetch(`http://localhost:3000/recipes/${recipeid}`).then(res => res.json())
-            const data = await fetch(`http://localhost:3000/recipes/image/${receita.imagem.filename}`).then(res => res.blob())
+            const receita = await fetch(`http://localhost:3000/recipes/${recipeid}`).then(res => res.json()).catch(err => this.handleError(err))
+            const data = await fetch(`http://localhost:3000/recipes/image/${receita.imagem.filename}`).then(res => res.blob()).catch(err => this.handleError(err))
             await fetch(`http://localhost:3000/recipes/clicked/${recipeid}`, {
                 method: 'PATCH'
-            })
+            }).catch(err => this.handleError(err))
             const modalTitle = document.querySelector('.modal-title')
             const modalBody = document.querySelector('.modal-body')
             modalBody.innerHTML = ''
