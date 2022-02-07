@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         </nav>
     </header>
     <main>
-        <section id="wrap-form-receitas">
+        <section>
             <h2 class="form__title">
                 Envie sua Receita!
             </h2>
@@ -81,15 +81,17 @@
                 </form>
             </div>
         </section>
-        <div  class="toast align-items-center text-white border-0 me-4" role="alert" aria-live="assertive"
-            aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body">
+        <section>
+            <div class="toast align-items-center text-white border-0 me-4" role="alert" aria-live="assertive"
+                aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                    aria-label="Close"></button>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="text-center p-3">
@@ -101,7 +103,7 @@
 <script src="../js/controllers/ReceitaController.js"></script>
 <script src="../js/views/View.js"></script>
 <script src="../js/views/ReceitasView.js"></script>
-<script src="../js/form.js" type="module"></script>
+<script src="../js/form/validador.js" type="module"></script>
 
 <script>
     let receitaController = new ReceitaController()

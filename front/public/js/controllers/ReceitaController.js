@@ -94,7 +94,6 @@ class ReceitaController {
                 }
             }
             modalBody.append(ul)
-
         })
     }
     loadView() {
