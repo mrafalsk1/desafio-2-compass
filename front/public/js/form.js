@@ -92,7 +92,7 @@ function validaTempo(input) {
 }
 function validaNome(input) {
     let mensagem = ''
-    const regex = /^[a-zA-Z]*$/
+    const regex = /^[a-zA-ZÀ-ú\s]*$/
     if (!regex.test(input.value.trim().replace(' ',''))) {
         mensagem = 'O campo de nome deve conter somente letras.'
     }
