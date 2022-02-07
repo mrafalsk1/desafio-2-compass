@@ -13,6 +13,8 @@ Tecnologias Usadas
 * Express version 4.17.2
 * multer 1.4.4
 * mongoose 6.1.7
+* Bootstrap 5.0.2
+* FontAwesome 4.7.0
 
 ## Services Used
  
